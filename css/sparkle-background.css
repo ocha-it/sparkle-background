@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    height:100vh;
+    background: linear-gradient(to bottom, #d6e9ff, #ffc0cb);
+    overflow: hidden;
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: sparkleAnimation 2s infinite ease-in-out;
+  }
+  
+  @keyframes sparkleAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }
+  
+  .sparkle:nth-child(1) { top: 10%; left: 30%; animation-delay: 0.2s; }
+  .sparkle:nth-child(2) { top: 70%; left: 10%; animation-delay: 0.5s; }
+  .sparkle:nth-child(3) { top: 20%; left: 80%; animation-delay: 0.8s; }
